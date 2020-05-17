@@ -3,13 +3,11 @@ package mongo_wrapper
 import (
     "fmt"
 	"os"
-	// "github.com/joho/godotenv"
     "go.mongodb.org/mongo-driver/mongo"
-    // "go.mongodb.org/mongo-driver/bson"
 	"go.mongodb.org/mongo-driver/mongo/options"
 	"context"
 
-	c "../constants"
+	c "github.com/sugarbox/constants"
 	
 )
 
@@ -18,7 +16,10 @@ var db *mongo.Database
 
 func init() {
     ctx := context.Background()
-    mongoURI := fmt.Sprintf("mongodb+srv://" + os.Getenv("mongo_username")+ ":" + os.Getenv("mongo_pass") +"@cluster0-yqtrj.mongodb.net/test?retryWrites=true&w=majority")
+    // mongoURI := fmt.Sprintf("mongodb+srv://" + os.Getenv("mongo_username")+ ":" + os.Getenv("mongo_pass") +"@cluster0-yqtrj.mongodb.net/test?retryWrites=true&w=majority")
+
+    // username and password to be stored in OS as above, but for ease storing in constants ...
+    mongoURI := fmt.Sprintf("mongodb+srv://" + c.DB_USERNAME+ ":" + c.DB_PASSWORD +"@cluster0-yqtrj.mongodb.net/test?retryWrites=true&w=majority")
 
     // Set client options and connect
     clientOptions := options.Client().ApplyURI(mongoURI)

@@ -2,10 +2,11 @@ package app
 
 import(
 	"net/http"
-	u "../utils"
-	c "../constants"
-	m "../mongo_wrapper"
-	"../models"
+	u "github.com/sugarbox/utils"
+	c "github.com/sugarbox/constants"
+	m "github.com/sugarbox/mongo_wrapper"
+	"github.com/sugarbox/models"
+	
 	"go.mongodb.org/mongo-driver/bson"
 	"go.mongodb.org/mongo-driver/bson/primitive"
 	"github.com/gorilla/mux"

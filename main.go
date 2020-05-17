@@ -7,7 +7,7 @@ import (
 
 	"github.com/gorilla/mux"
 
-	"./app"
+	"github.com/sugarbox/app"
 )
 
 func main () {
