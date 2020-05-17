@@ -3,20 +3,21 @@ README
 QUICK START
 
 Step 1) clone the repo 
-https://github.com/afvignesh/sugarbox_assignment.git
+git clone https://github.com/afvignesh/sugarbox_assignment.git
 
-Step 2) go to the directory and run command
-./Sugarbox_assignment
+Step 2) go to the directory "Sugarbox_assignment" and run command
+ --> go get
+ --> go build
+ --> ./sugarbox
 
 Step 3) Go to browser and enter
 localhost:8000/api
 
 
-API's LIST
+API's
 
-The app has 4 API's listed as :
+Postman documentation link:
+https://documenter.getpostman.com/view/4623773/SzmmUEUD?version=latest
 
-1) localhost:8000/api/rating/new/{mname} :- Used to add rating to a movie
-2) localhost:8000/comment/new/{mname} :- Used to add new comment to a movie
-3) localhost:8000/api/movies :- Search through the list of Movies
-4) localhost:8000/api/user_activity :- Get list of ratings and comments done by User
+Postman collection link:
+https://www.getpostman.com/collections/6fd44fa1c509c7bb365d
